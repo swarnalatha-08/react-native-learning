@@ -1,56 +1,111 @@
-# Welcome to your Expo app 👋
+# Weather App 🌦️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native weather application built with Expo and TypeScript that allows users to search weather conditions by city, view forecasts, use their current location, and save recent searches.
 
-## Get started
+## Features
 
-1. Install dependencies
+- 🔍 Search weather by city name
+- 📍 Get weather using current device location
+- 🌡️ View current temperature and weather conditions
+- 📅 5-day weather forecast
+- 🕒 Recent search history
+- 💾 Persist last searched city using AsyncStorage
+- 🔄 Pull to refresh weather data
+- 📱 Built with React Native and Expo
+- 📝 TypeScript support
 
-   ```bash
-   npm install
-   ```
+## Screenshots
 
-2. Start the app
+Add screenshots of your app here.
 
-   ```bash
-   npx expo start
-   ```
+## Tech Stack
 
-In the output, you'll find options to open the app in a
+- React Native
+- Expo
+- TypeScript
+- Axios
+- Expo Location
+- AsyncStorage
+- OpenWeather API
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Installation
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Clone the repository:
 
 ```bash
-npm run reset-project
+git clone <repository-url>
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Navigate to the project:
 
-### Other setup steps
+```bash
+cd weather-app
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+Install dependencies:
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Start the development server:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+## Environment Setup
 
-Join our community of developers creating universal apps.
+Create a configuration file and add your OpenWeather API key:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```ts
+export const WEATHER_API_KEY = "YOUR_API_KEY";
+```
+
+Get a free API key from OpenWeather.
+
+## Project Structure
+
+```text
+src/
+├── app/
+│   └── index.tsx
+├── components/
+│   ├── ForecastList.tsx
+│   ├── LocationButton.tsx
+│   ├── SearchBar.tsx
+│   ├── SearchHistory.tsx
+│   └── WeatherCard.tsx
+├── services/
+│   └── weatherService.ts
+├── constants/
+│   └── config.ts
+└── utils/
+    └── helpers.ts
+```
+
+## Learning Outcomes
+
+This project helped practice:
+
+- React Native fundamentals
+- Component-based architecture
+- API integration with Axios
+- AsyncStorage persistence
+- Location services
+- State management with React Hooks
+- TypeScript in React Native
+- Error handling and loading states
+
+## Future Improvements
+
+- Dark mode support
+- Weather icons from API
+- Hourly forecast
+- Weather maps
+- Better UI animations
+- Unit conversion (°C / °F)
+
+## Author
+
+Swarna Latha
